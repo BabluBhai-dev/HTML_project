@@ -21,8 +21,30 @@
   </head>
   <body>
     <!-- header section -->
-    <h1>🔐 User Login</h1>
-    <p>Welcome back! Please enter your login details below.</p>
-    <hr />
+    <section>
+      <h1>🔐 User Login</h1>
+      <p>Welcome back! Please enter your login details below.</p>
+      <hr />
+    </section>
+    <!-- form section -->
+    <form>
+      <fieldset>
+        <legend>Login Details</legend>
+        <label for="name">👤 Username:</label><br />
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your username"
+        /><br /><br />
+        <labe for="password">🔑 Password:</labe><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        /><br /><br />
+        <input value="login" type="submit" />
+        <input value="clear" type="reset" />
+      </fieldset>
+    </form>
   </body>
 </html>
