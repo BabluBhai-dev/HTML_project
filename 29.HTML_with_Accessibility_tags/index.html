@@ -18,29 +18,44 @@
     <!-- header section -->
     <header>
       <h1>👋 Meet Bablu Bhai</h1>
-      <img
-        src="Icon/Profile.webp"
-        width="200"
-        alt="Bablu Bhai smiling and wearing a blue shirt
-Photo of Bablu Bhai"
-      />
     </header>
     <!-- main secion -->
-    <section>
-      <h2>About Me</h2>
-      <p>I’m learning HTML and building cool projects step by step!</p>
-    </section>
-    <!-- form -->
-     <form aria-label="Contact form">
+    <main>
+      <figure>
+        <img
+          src="Icon/Profile.webp"
+          width="200"
+          alt="Bablu Bhai smiling and wearing a blue shirt
+Photo of Bablu Bhai"
+        />
+        <figcaption>Photo of Bablu Bhai</figcaption>
+      </figure>
+      <section>
+        <h2>About Me</h2>
+        <p>I’m learning HTML and building cool projects step by step!</p>
+      </section>
+      <section>
         <h2>Contact Me</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name"><br><br>
-        <label for="Email">Email:</label>
-        <input type="text" id="Email" placeholder="Enter your Email"><br><br>
-        <input type="submit" value="Send">
-     </form>
-     <footer>
-        <p>Made with ❤️ by Bablu</p>
-     </footer>
+        <!-- form -->
+        <form aria-label="Contact form">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+          /><br /><br />
+          <label for="Email">Email:</label>
+          <input
+            type="text"
+            id="Email"
+            placeholder="Enter your Email"
+          /><br /><br />
+          <button type="submit" aria-label="Send message">send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Made with ❤️ by Bablu</p>
+    </footer>
   </body>
 </html>
