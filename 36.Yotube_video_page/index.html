@@ -22,18 +22,19 @@
     <!-- header section -->
     <header>
       <h1>YouTube</h1>
-      <a href="#">Home</a> | <a href="#">Tranding</a> |
-      <a href="#">Subscriptions</a> | <a href="#">Library</a>
+      <nav><a href="#">Home</a> | <a href="#">Tranding</a> |
+      <a href="#">Subscriptions</a> | <a href="#">Library</a></nav>
+      
       <form>
-        <input type="text" placeholder="Search" />
-        <button>Search</button>
+        <input type="text" placeholder="Search" name="search" />
+        <input type="sunmit" value="search">
       </form>
       <hr />
     </header>
     <!-- main section -->
     <main>
       <!-- section 1 -->
-      <section>
+      <section aria-label="video Player">
         <h2>Web Development Full Course - Learn HTML, CSS, JavaScript</h2>
         <iframe
           width="560"
@@ -46,14 +47,12 @@
           allowfullscreen
         ></iframe>
         <p>1,245,980 views • Published on October 24, 2025</p>
-        <input type="submit" value="👍 Like" />
-        <input type="submit" value="👎 Dislike" />
-        <input type="submit" value="🔁 Share" />
-        <input
-          type="submit"
-          value="💾 Save
-"
-        />
+        <div>
+            <button>👍 Like</button>
+            <button>👎 Dislike</button>
+            <button>🔁 Share</button>
+            <button>💾 Save</button>
+        </div>
         <hr />
       </section>
       <!-- section -->
@@ -68,18 +67,68 @@
         <hr />
       </section>
       <!-- footer -->
-      <footer>
-        <h2>Comments (3)</h2>
-        <label>Add a comment:</label><br>
-        <textarea
-          rows="4"
-          cols="40"
-          placeholder="write your comment"
-        ></textarea><br>
-        <input type="submit" value="Post" />
-        <p>💬 Rahul</p>
-        <p>Great explanation! Learned a lot from</p>
-      </footer>
-    </main>
-  </body>
+      <!-- 💬 COMMENTS SECTION -->
+    <section aria-label="Comments Section">
+      <h3>Comments (3)</h3>
+
+      <form>
+        <label for="comment">Add a comment:</label><br>
+        <textarea id="comment" name="comment" rows="3" cols="50" placeholder="Write your comment..."></textarea><br>
+        <input type="submit" value="Post">
+      </form>
+
+      <article>
+        <h4>💬 Rahul</h4>
+        <p>Great explanation! Learned a lot from this video 🔥</p>
+      </article>
+
+      <article>
+        <h4>💬 Anjali</h4>
+        <p>Very clear and easy to follow. Thank you, Bablu Bhai!</p>
+      </article>
+
+      <article>
+        <h4>💬 Aarav</h4>
+        <p>Waiting for the React tutorial next 😄</p>
+      </article>
+    </section>
+
+    <hr>
+
+    <!-- 📺 RELATED VIDEOS (Sidebar Style) -->
+    <aside aria-label="Related Videos">
+      <h3>Related Videos</h3>
+      <ul>
+        <li>
+          <a href="#">JavaScript in 1 Hour – Full Crash Course</a><br>
+          <small>500K views • Code School</small>
+        </li>
+        <li>
+          <a href="#">HTML5 Beginner Tutorial</a><br>
+          <small>200K views • LearnWithBablu</small>
+        </li>
+        <li>
+          <a href="#">CSS Flexbox Explained</a><br>
+          <small>150K views • Design Hub</small>
+        </li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <hr>
+
+  <!-- ⚙️ FOOTER -->
+  <footer>
+    <p>© 2025 YouTube Clone by Bablu Bhai</p>
+    <nav>
+      <a href="#">About</a> |
+      <a href="#">Press</a> |
+      <a href="#">Developers</a> |
+      <a href="#">Terms</a> |
+      <a href="#">Privacy</a>
+    </nav>
+  </footer>
+
+</body>
 </html>
