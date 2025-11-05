@@ -75,41 +75,82 @@
       </section>
       <hr />
       <!-- Javascript Section -->
-       <section>
+      <section>
         <h2>JavaScript Basics</h2>
         <article>
-            <h3>Why Use JavaScript?</h3>
-            <p>JavaScript makes websites dynamic — it lets you add logic, interactivity, animations, and control over user actions.</p>
+          <h3>Why Use JavaScript?</h3>
+          <p>
+            JavaScript makes websites dynamic — it lets you add logic,
+            interactivity, animations, and control over user actions.
+          </p>
         </article>
         <article>
-        <h3>Simple Example</h3>
-        <p>
-            <pre><code>
-                &lt;script&gt;
-                   alert('Hello,World!');
-                &lt;/script&gt;
-            </code></pre>
-        </p>
+          <h3>Simple Example</h3>
+          <pre><code>
+&lt;script&gt;
+  alert('Hello, World!');
+&lt;/script&gt;
+        </code></pre>
         </article>
-       </section>
-       <hr>
-       <!-- FAQ section -->
-        <section>
-            <h2>Frequently Asked Questions</h2>
-            <details>
-                <summary>How can I start learning HTML?</summary>
-                <p>Start by creating simple pages like personal bio, forms, and tables. Practice daily!</p>
-            </details>
-            <details>
-                <summary>Do I need CSS to make a website?</summary>
-                <p>HTML builds the structure, CSS makes it beautiful. Both are essential together.</p>
-            </details>
-            <details>
-                <summary>What is the MERN Stack?</summary>
-                <p>MERN stands for MongoDB, Express, React, and Node.js — a powerful set of web development technologies.</p>
-            </details>
-        </section>
-        <hr>
+      </section>
+      <hr />
+      <!-- FAQ section -->
+      <section>
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>How can I start learning HTML?</summary>
+          <p>
+            Start by creating simple pages like personal bio, forms, and tables.
+            Practice daily!
+          </p>
+        </details>
+        <details>
+          <summary>Do I need CSS to make a website?</summary>
+          <p>
+            HTML builds the structure, CSS makes it beautiful. Both are
+            essential together.
+          </p>
+        </details>
+        <details>
+          <summary>What is the MERN Stack?</summary>
+          <p>
+            MERN stands for MongoDB, Express, React, and Node.js — a powerful
+            set of web development technologies.
+          </p>
+        </details>
+      </section>
+      <hr />
+      <!-- forms -->
+      <section>
+        <h2>Contact Support</h2>
+        <form>
+          <label for="name">Full Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+          /><br /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+          /><br /><br />
+          <label for="message">Your Question:</label><br />
+          <textarea
+            name="message"
+            id="message"
+            cols="60"
+            rows="5"
+            placeholder="Ask our Question here...."
+          ></textarea
+          ><br /><br />
+          <input type="submit" value="submit" />
+        </form>
+      </section>
+      <hr />
     </main>
   </body>
 </html>
