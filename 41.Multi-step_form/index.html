@@ -52,7 +52,8 @@
       <br />
       <!-- Address Details -->
       <fieldset>
-        <legend>Step 2: Address Details</legend><br>
+        <legend>Step 2: Address Details</legend>
+        <br />
         <label for="address">Street Address:</label><br />
         <input
           type="text"
@@ -85,7 +86,8 @@
       <br />
       <!-- Account Setup -->
       <fieldset>
-        <legend>Step 3: Account Setup</legend><br>
+        <legend>Step 3: Account Setup</legend>
+        <br />
         <label for="username">Username:</label><br />
         <input
           type="text"
@@ -107,10 +109,12 @@
           name="Confirmpassword"
           placeholder="Re-enter your password"
         /><br />
-      </fieldset><br>
+      </fieldset>
+      <br />
       <!-- Preference -->
       <fieldset>
-        <legend>Step 4: Preferences</legend><br>
+        <legend>Step 4: Preferences</legend>
+        <br />
         <label for="select">How did you hear about us?</label><br /><br />
         <select id="select" name="select">
           <option value=" ">--select--</option>
@@ -119,9 +123,21 @@
           <option value="addvertisement">addvertisement</option>
           <option value="other">Other</option></select
         ><br /><br />
-        <label for="option">Would you like to receive newsletters?</label><br /><br>
+        <label for="option">Would you like to receive newsletters?</label
+        ><br /><br />
         <input type="radio" id="option" name="option" />Yes
         <input type="radio" id="option" name="option" />No
+      </fieldset>
+      <br />
+      <!-- Review and submit -->
+      <fieldset>
+        <legend>Step 5: Review & Submit</legend>
+        <p>Before submitting, please review your details carefully.</p>
+
+        <input type="checkbox" name="checkbox" id="checkbox" /> 
+        <label for="checkbox"
+          >I confirm that all the above details are correct.</label
+        >
       </fieldset>
     </form>
   </body>
