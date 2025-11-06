@@ -52,7 +52,7 @@
       <br />
       <!-- Address Details -->
       <fieldset>
-        <legend>Step 2: Address Details</legend>
+        <legend>Step 2: Address Details</legend><br>
         <label for="address">Street Address:</label><br />
         <input
           type="text"
@@ -81,10 +81,11 @@
           name="code"
           placeholder="Enter ZIP code"
         />
-      </fieldset><br>
+      </fieldset>
+      <br />
       <!-- Account Setup -->
       <fieldset>
-        <legend>Step 3: Account Setup</legend>
+        <legend>Step 3: Account Setup</legend><br>
         <label for="username">Username:</label><br />
         <input
           type="text"
@@ -106,6 +107,21 @@
           name="Confirmpassword"
           placeholder="Re-enter your password"
         /><br />
+      </fieldset><br>
+      <!-- Preference -->
+      <fieldset>
+        <legend>Step 4: Preferences</legend><br>
+        <label for="select">How did you hear about us?</label><br /><br />
+        <select id="select" name="select">
+          <option value=" ">--select--</option>
+          <option value="Friends">Friends</option>
+          <option value="Social-media">social media</option>
+          <option value="addvertisement">addvertisement</option>
+          <option value="other">Other</option></select
+        ><br /><br />
+        <label for="option">Would you like to receive newsletters?</label><br /><br>
+        <input type="radio" id="option" name="option" />Yes
+        <input type="radio" id="option" name="option" />No
       </fieldset>
     </form>
   </body>
