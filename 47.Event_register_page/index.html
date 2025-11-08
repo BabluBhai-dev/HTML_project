@@ -44,6 +44,7 @@
         <p><strong>Location:</strong> Mumbai Convention Center, India</p>
         <hr />
       </section>
+      <!-- schedule -->
       <section id="Schedule">
         <h2>🗓️ Schedule Highlights</h2>
         <article>
@@ -64,6 +65,74 @@
           </p>
           <hr />
         </article>
+      </section>
+      <!-- Register -->
+      <section>
+        <h2>📝 Register Now</h2>
+        <p>Fill in the form below to reserve your seat at the conference.</p>
+        <form>
+          <fieldset>
+            <legend>👤 Personal Information</legend>
+            <label for="FullName:">Full Name:</label>
+            <input
+              type="text"
+              id="fullName"
+              name="full name"
+              placeholder="Enter your name"
+            />
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <label for="number">Phone Number :</label>
+            <input
+              type="text"
+              id="number"
+              name="phone number"
+              placeholder="+91 9876543210"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>🎟️ Event Preferences</legend>
+            <label for="type">Ticket Type:</label>
+            <select id="type">
+              <option value="Standard Pass - $499">Standard Pass - $499</option>
+              <option value="VIP Pass - $999">VIP Pass - $999</option>
+              <option value="Student pass - $299">Student pass - $299</option>
+            </select>
+            <h3>Workshop Selection:</h3>
+            <input type="checkbox" id="AI" name="Workshop Selection" /><label
+              for="AI"
+              >AI & Machine Learning</label
+            ><br />
+            <input type="checkbox" id="WEB" name="Workshop Selection" /><label
+              for="WEB"
+              >Web Development</label
+            ><br />
+            <input type="checkbox" id="cloud" name="Workshop Selection" /><label
+              for="cloud"
+              >Cloud Computing</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>📅 Attendance Mode</legend>
+            <input type="radio" name="attendance" />Onsite<br />
+            <input type="radio" name="attendance" />Vitual
+          </fieldset>
+          <label for="message">Message (Optional):</label>
+          <textarea
+            id="message"
+            cols="15"
+            rows="4"
+            name="message"
+            placeholder="Any special request?"
+          ></textarea>
+          <input type="submit" value="Submit registration" />
+        </form>
+        <hr />
       </section>
     </main>
   </body>
