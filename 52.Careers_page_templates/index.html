@@ -95,6 +95,34 @@
           <hr />
         </article>
       </section>
+      <!-- Apply for a job -->
+      <section>
+        <h2>Apply for the job</h2>
+        <form>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="F_name">Full Name:</label><br />
+            <input type="text" id="F_name" name="fullname" /><br /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br /><br />
+            <label for="apply">Position Applying For:</label><br />
+            <select id="apply" name="Position Applying for:">
+              <option value="Front-end Developer">Front-end Developer</option>
+              <option value="Backend-end Developer">
+                Backend-end Developer
+              </option>
+              <option value="UI/UX-Developer">UI/UX-Developer</option></select
+            ><br /><br />
+            <label for="Upload Resume:">Upload Resume:</label><br />
+            <input type="file" name="upload file" /><br /><br />
+            <label for="message">Why should we hire you?</label><br />
+            <textarea id="message" name="message" cols="30" rows="6"></textarea><br><br>
+            <input type="submit" value="Submit application" />
+          </fieldset>
+          
+        </form>
+        <hr />
+      </section>
     </main>
   </body>
 </html>
