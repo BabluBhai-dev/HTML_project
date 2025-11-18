@@ -20,7 +20,31 @@
     <link rel="icon" type="image/png" href="Icon/Icons.jpg" />
   </head>
   <body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <!-- header section -->
+    <header aria-label="hero-section">
+      <h1><a href="#">TasteExpress</a></h1>
+      <p>Fast. Fresh. Delivered.</p>
+      <nav aria-label="Main-nav-section">
+        <ul>
+          <li><a href="#">Restaurants</a></li>
+          <li><a href="#">Cuisines</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <form aria-label="search-form">
+        <label for="search">Search</label>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search dishes or restaurant"
+        />
+        <label for="location">Location </label
+        ><input type="text" id="location" placeholder="City or ZIP" />
+        <input type="submit" value="Search" />
+      </form>
+      <hr />
+    </header>
   </body>
 </html>
