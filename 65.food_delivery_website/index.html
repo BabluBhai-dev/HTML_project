@@ -145,6 +145,34 @@
         </ol>
         <hr />
       </section>
+      <!-- checkout -->
+      <section>
+        <h2>Checkout</h2>
+        <fieldset>
+          <legend>Delivery Details</legend>
+          <br />
+          <label for="fullname">Full name</label><br />
+          <input type="text" id="fullname" /><br /><br />
+          <label for="phone">Phone</label><br />
+          <input type="text" id="phone" /><br /><br />
+          <label for="address">Address</label><br />
+          <textarea id="address" rows="5" cols="14"></textarea><br />
+        </fieldset>
+        <fieldset>
+          <legend>Payment</legend>
+          <input type="radio" name="payment" value="cash-on-Dlivery" /><label
+            >Cash on Delivery</label
+          ><br />
+          <input type="radio" name="payment" value="Pay with Card" /><label
+            >Pay with Card</label
+          >
+          <br />
+          <input type="radio" name="payment" value="UPI" /><label>UPI</label>
+          <br />
+        </fieldset>
+        <input type="submit" value="Place Order" />
+        <hr />
+      </section>
     </main>
   </body>
 </html>
