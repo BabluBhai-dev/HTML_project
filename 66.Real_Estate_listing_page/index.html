@@ -35,5 +35,42 @@
       </nav>
       <hr />
     </header>
+    <!-- main section -->
+    <main>
+      <!-- Search Properties -->
+      <section>
+        <h2>Search Properties</h2>
+        <form>
+          <label for="keyword">Keyword</label><br />
+          <input
+            type="text"
+            id="keyword"
+            placeholder="City,Area,Property ID"
+          /><br /><br />
+          <label for="p_type">Property Type</label><br />
+          <select id="p_type" name="Property Type">
+            <option value="Apartment">Apartment</option>
+            <option value="Villa">Villa</option>
+            <option value="Independent House">Independent House</option>
+            <option value="Commercial">Commercial</option>
+          </select><br><br>
+          <labe for="budget">Budget</labe><br />
+          <select id="budget">
+            <option
+              value="
+₹20 Lakh - ₹50 Lakh
+"
+            >
+              ₹20 Lakh - ₹50 Lakh
+            </option>
+            <option value="₹50 Lakh - ₹1 Crore">₹50 Lakh - ₹1 Crore</option>
+            <option value="₹1 Crore - ₹2 Crore">₹1 Crore - ₹2 Crore</option>
+            <option value="Above 2 Crore">Above 2 Crore</option>
+          </select><br><br>
+          <input type="submit" value="Search" />
+        </form>
+        <hr />
+      </section>
+    </main>
   </body>
 </html>
