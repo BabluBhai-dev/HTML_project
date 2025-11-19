@@ -114,6 +114,40 @@ console.log(res);
         </ul>
         <hr />
       </section>
+      <!-- API -->
+      <section id="APIReference">
+        <h2>API Reference</h2>
+        <h3>createClient(config)</h3>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+          <li>
+            <code>config.apiKey</code> <em>(string, required)</em> — Your API
+            key.
+          </li>
+          <li>
+            <code>config.timeout</code><em>(number)</em> — Request timeout in
+            ms.
+          </li>
+        </ul>
+        <p><strong>Returns: </strong>Client object with methods:</p>
+        <ul>
+          <li>
+            <code>client.</code>
+            doSomething(input) — performs action, returns Promise
+            &lt;Result&gt;.
+          </li>
+        </ul>
+        <h3>client.doSomething(input)</h3>
+        <p><strong>Input: </strong><code>string</code></p>
+        <p><strong>Response:</strong></p>
+        <pre><code>
+{
+  "status": "ok",
+  "data": { /* ... */ }
+}
+        </code></pre>
+        <hr />
+      </section>
     </main>
   </body>
 </html>
