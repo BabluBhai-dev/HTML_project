@@ -33,18 +33,32 @@
       <!-- Navigation tabs -->
       <h2>Navigation Tabs</h2>
       <fieldset>
-        <input type="radio" name="tabs" value="Overview" /><label
+        <input type="radio" name="tabs" id="tab1" checked /><label for="tab1"
           >Overview</label
         >
-        <input type="radio" name="tabs" value="Features" /><label
+        <input type="radio" name="tabs" id="tab2" /><label for="tab2"
           >Features</label
         >
-        <input type="radio" name="tabs" value="Documentation" /><label
+        <input type="radio" name="tabs" id="tab3" /><label for="tab3"
           >Documentation</label
         >
-        <input type="radio" name="tabs" value="FAQ" /><label>FAQ</label>
-        <input type="radio" name="tabs" value="Contact" /><label>Contact</label>
+        <input type="radio" name="tabs" id="tab4" /><label for="tab4"
+          >FAQ</label
+        >
+        <input type="radio" name="tabs" id="tab5" /><label for="tab5"
+          >Contact</label
+        >
         <hr />
+        <!-- Overview -->
+        <h2>Overview</h2>
+        <p>
+          This is the Overview tab content. Since only one radio button can be
+          selected at a time, this behaves like real tabs without JavaScript.
+        </p>
+        <p>
+          You can include paragraphs, lists, or structured data inside the
+          content area.
+        </p>
       </fieldset>
     </main>
   </body>
