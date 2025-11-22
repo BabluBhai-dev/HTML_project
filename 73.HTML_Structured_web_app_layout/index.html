@@ -185,6 +185,31 @@
         </table>
         <hr />
       </section>
+      <!-- settings -->
+      <section id="settings">
+        <h2>Settings (General)</h2>
+        <fieldset>
+          <legend>Site settings</legend>
+          <label for="title">Site Title</label><br />
+          <input
+            type="text"
+            id="title"
+            name="title"
+            value="App Name"
+          /><br /><br />
+          <label for="timezone">Timezone</label><br />
+          <select id="timezone" name="timezone">
+            <option value="Asia/Kolkata">Asia/Kolkata</option>
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">America/New_York</option></select
+          ><br /><br />
+          <label for="mode">Maintenance Mode</label><br />
+          <input type="radio" name="mode" />Off
+          <input type="radio" name="mode" />On <br /><br />
+          <input type="submit" value="Save Settings" />
+        </fieldset>
+        <hr />
+      </section>
     </main>
   </body>
 </html>
