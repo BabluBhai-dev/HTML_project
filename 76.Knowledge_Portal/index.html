@@ -41,7 +41,7 @@
       <nav>
         <a href="#Overview">Overview</a> |
         <a href="#Architecture"> Architecture</a> |
-        <a href="How-to">How-to</a> | <a href="KB Articles">KB Articles</a> |
+        <a href="#How-to">How-to</a> | <a href="KB Articles">KB Articles</a> |
         <a href=" FAQ"> FAQ</a> | <a href="Governance">Governance</a> |
         <a href="Compliance ">Compliance </a> |
         <a href="Support ">Support </a> | <a href="Sitemap">Sitemap</a>
@@ -114,6 +114,62 @@
           </p>
           <p><strong>Tags: </strong>data-mesh, governance, SLA, lineage</p>
         </article>
+      </section>
+      <!-- How-to Guides -->
+      <section id="How-to">
+        <h2>How-to Guides</h2>
+        <article>
+          <h3>Enable mTLS Across Clusters</h3>
+          <p>
+            Step-by-step process to configure mutual TLS between services in
+            hybrid environments.
+          </p>
+          <p><strong>Estimated time: </strong> INR 0 | 45 minutes</p>
+          <p>Cluster credentials, CA root bundle, policy manifests</p>
+          <ol>
+            <li>
+              Validate trust anchors<br />
+              Confirm CA fingerprints and expiry dates match security policy.
+            </li>
+            <li>
+              Apply sidecar policy<br />
+              Attach mutual TLS policy to workloads via deployment manifests.
+            </li>
+            <li>
+              Test handshake<br />
+              Use health endpoints to verify certificates are presented and
+              validated.
+            </li>
+          </ol>
+          <p>
+            <strong>Outcome:</strong> Encrypted, verified service communication
+          </p>
+        </article>
+        <aricle>
+          <h3>Publish a Versioned KB Article</h3>
+          <p>
+            Governed workflow to publish documentation with SME review and
+            traceable changes.
+          </p>
+          <ol>
+            <li>
+              Draft<br />
+              Author creates content with identifiers, summary, and keywords.
+            </li>
+            <li>
+              Review<br />
+              SME validates accuracy, security posture, and compliance
+              implications.
+            </li>
+            <li>
+              Release<br />DocOps assigns version, updates metadata, and
+              archives previous revisions.
+            </li>
+          </ol>
+          <p>
+            <strong>Outcome:</strong> Traceable, authoritative documentation
+          </p>
+        </aricle>
       </section>
     </main>
   </body>
