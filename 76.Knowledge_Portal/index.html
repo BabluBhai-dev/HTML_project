@@ -27,7 +27,78 @@
       href="https://example.com/knowledge-portal"
     />
     <!-- Fav Icon -->
-    <link rel="icon" type="image/png" href="/Icon/Icons.png">
+    <link rel="icon" type="image/png" href="/Icon/Icons.png" />
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://example.com/#website",
+            "name": "Enterprise HTML Knowledge Portal",
+            "url": "https://example.com/knowledge-portal",
+            "publisher": {
+              "@type": "Organization",
+              "@id": "https://example.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://example.com/knowledge-portal/#webpage",
+            "url": "https://example.com/knowledge-portal",
+            "name": "Enterprise HTML Knowledge Portal",
+            "isPartOf": {
+              "@id": "https://example.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://example.com/#logo"
+            },
+            "breadcrumb": {
+              "@id": "https://example.com/knowledge-portal/#breadcrumb"
+            },
+            "description": "Centralized enterprise documentation, architecture references, SOPs, and governance for teams."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://example.com/knowledge-portal/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://example.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Knowledge Portal",
+                "item": "https://example.com/knowledge-portal"
+              }
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://example.com/#organization",
+            "name": "Documentation Engineering Team",
+            "url": "https://example.com",
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://example.com/#logo",
+              "url": "https://example.com/logo.png"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "email": "docops@example.com",
+              "telephone": "+91-22-4000-0000",
+              "availableLanguage": ["en"],
+              "areaServed": "IN"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- header section -->
