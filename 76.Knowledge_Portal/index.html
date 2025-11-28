@@ -40,7 +40,7 @@
       <p>Unit 804, Sapphire Business Park, Mumbai, MH, 400001, IN</p>
       <nav>
         <a href="#Overview">Overview</a> |
-        <a href="# Architecture"> Architecture</a> |
+        <a href="#Architecture"> Architecture</a> |
         <a href="How-to">How-to</a> | <a href="KB Articles">KB Articles</a> |
         <a href=" FAQ"> FAQ</a> | <a href="Governance">Governance</a> |
         <a href="Compliance ">Compliance </a> |
@@ -51,19 +51,70 @@
         <li><a href="#">Knowledge Portal</a></li>
       </ol>
     </header>
-    <!--Overview  -->
-    <section id="Overview">
-      <h2>Overview</h2>
-      <p>
-        This portal provides authoritative, versioned documentation across
-        architecture, operations, security, and compliance. Content is curated
-        by DocOps, reviewed by SMEs, and aligned to enterprise standards
-      </p>
-      <p><strong>Last updated:</strong> 26 Nov 2025</p>
-      <p>
-        <strong>Version: </strong>2025.4 | <strong>Status:</strong>Enterprise
-        Knowledge Program
-      </p>
-    </section>
+    <!-- Main section -->
+    <main>
+      <!--Overview  -->
+      <section id="Overview">
+        <h2>Overview</h2>
+        <p>
+          This portal provides authoritative, versioned documentation across
+          architecture, operations, security, and compliance. Content is curated
+          by DocOps, reviewed by SMEs, and aligned to enterprise standards
+        </p>
+        <p><strong>Last updated:</strong> 26 Nov 2025</p>
+        <p>
+          <strong>Version: </strong>2025.4 | <strong>Status:</strong>Enterprise
+          Knowledge Program
+        </p>
+      </section>
+      <!-- Architecture Reference -->
+      <section id="Architecture">
+        <h2>Architecture Reference</h2>
+        <p>
+          Core diagrams, standards, and decision records guiding platform
+          evolution and interoperability.
+        </p>
+        <article>
+          <h3>Enterprise Service Mesh Blueprint</h3>
+          <p>
+            <strong>Summary: </strong>Design pattern for zero-trust,
+            policy-driven service-to-service communication across hybrid
+            clusters.
+          </p>
+          <p><strong>Authors: </strong>Anita Desai , Rahul Mehta</p>
+          <p>
+            <strong>Identifiers: </strong>ARCH-DR-0127 |
+            <strong>Published: </strong>12 Sep 2025 |<strong> Reviewed:</strong>
+            05 Nov 2025
+          </p>
+          <p>
+            Adopt sidecar proxies, centralized policy, mTLS, and declarative
+            routing. Use layered SLOs and golden paths to balance resilience and
+            cost. Include fail-open strategies only for non-critical telemetry.
+          </p>
+          <p><strong>Tags: </strong>service-mesh, security, mTLS, SLOs</p>
+        </article>
+        <article>
+          <h3>Data Platform Governance Model</h3>
+          <p>
+            <strong>Summary: </strong> Federated governance with product-aligned
+            domains, contract-first schemas, and lineage-aware SLAs.
+          </p>
+          <p><strong>Authors: </strong> Sanjana Iyer</p>
+          <p>
+            <strong>Identifiers:</strong> DATA-GOV-0034 |
+            <strong>Published:</strong> 20 Jul 2025 |
+            <strong>Reviewed: </strong> 28 Oct 2025
+          </p>
+          <p>
+            Define domain councils, enforce schema contracts at ingress, and
+            track lineage at transformation points. SLA tiers must include
+            freshness, accuracy, and completeness. Non-conformant feeds are
+            quarantined until remediated.
+          </p>
+          <p><strong>Tags: </strong>data-mesh, governance, SLA, lineage</p>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
