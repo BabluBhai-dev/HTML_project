@@ -14,7 +14,64 @@
     <!-- Fav Icons -->
     <link rel="icon" type="image/png" href="Icons/Icons.png" />
     <!-- Schema.org -->
-     
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Periodical",
+        "name": "Atlas Quarterly",
+        "url": "https://example.com/magazine",
+        "description": "Atlas Quarterly is a professional magazine covering design, engineering, and industry analysis.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Atlas Media Ltd.",
+          "url": "https://example.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://example.com/assets/logo.png",
+            "width": 600,
+            "height": 60
+          }
+        },
+        "image": "https://example.com/assets/issue-77-cover.jpg",
+        "issn": "1234-5678",
+        "issueNumber": "77",
+        "hasPart": [
+          {
+            "@type": "PublicationIssue",
+            "issueNumber": "77",
+            "name": "Atlas Quarterly — Issue 77",
+            "url": "https://example.com/magazine/issue-77",
+            "datePublished": "2025-11-01",
+            "article": [
+              {
+                "@type": "Article",
+                "headline": "The Edge of AI: Practical Engineering in 2025",
+                "author": {
+                  "@type": "Person",
+                  "name": "Maya R. Singh",
+                  "url": "https://example.com/authors/maya-singh"
+                },
+                "datePublished": "2025-11-01",
+                "image": "https://example.com/assets/articles/ai-edge.jpg",
+                "url": "https://example.com/magazine/issue-77/ai-edge",
+                "description": "Hands-on, production-ready AI patterns for engineering teams.",
+                "keywords": "AI, engineering, production"
+              },
+              {
+                "@type": "Article",
+                "headline": "Designing for Scale: Systems that Grow",
+                "author": { "@type": "Person", "name": "Akash Patel" },
+                "datePublished": "2025-11-01",
+                "image": "https://example.com/assets/articles/design-scale.jpg",
+                "url": "https://example.com/magazine/issue-77/design-scale",
+                "description": "Architecture and team practices for resilient growth.",
+                "keywords": "scalability, architecture, org"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- header section -->
