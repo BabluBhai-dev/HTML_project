@@ -26,7 +26,130 @@
 
     <!-- Fav Icon -->
     <link rel="icon" type="image/png" href="logo/logos.jpg" />
+     <!-- schema -->
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://example.com/#organization",
+      "name": "North & Co",
+      "url": "https://example.com",
+      "logo": "https://example.com/assets/logo.png",
+      "sameAs": [
+        "https://twitter.com/northco",
+        "https://www.linkedin.com/company/north-co"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-0100",
+          "contactType": "customer service",
+          "areaServed": "Worldwide"
+        }
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://example.com/#website",
+      "url": "https://example.com",
+      "name": "North & Co — Creative Agency",
+      "publisher": { "@id": "https://example.com/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://example.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://example.com/#localbusiness",
+      "name": "North & Co",
+      "image": "https://example.com/assets/office.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Market Street",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "KA",
+        "postalCode": "560001",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-80-5555-0100",
+      "priceRange": "$$$",
+      "parentOrganization": { "@id": "https://example.com/#organization" }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://example.com/#homepage",
+      "url": "https://example.com/",
+      "name": "North & Co — Creative Agency",
+      "isPartOf": { "@id": "https://example.com/#website" },
+      "about": { "@id": "https://example.com/#organization" },
+      "primaryImageOfPage": "https://example.com/assets/office.jpg"
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://example.com/#service-product-design",
+      "name": "Product Design",
+      "description": "User research, interaction design, and design systems that scale.",
+      "provider": { "@id": "https://example.com/#organization" }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://example.com/#service-engineering",
+      "name": "Engineering",
+      "description": "Frontend & backend engineering, APIs, and observability for production systems.",
+      "provider": { "@id": "https://example.com/#organization" }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://example.com/#service-growth",
+      "name": "Growth & Strategy",
+      "description": "Product strategy, metrics, and experimentation to accelerate growth.",
+      "provider": { "@id": "https://example.com/#organization" }
+    },
+
+    {
+      "@type": "CreativeWork",
+      "@id": "https://example.com/case-studies/zen-pay#work",
+      "headline": "ZenPay — Payments UX overhaul",
+      "description": "Reduced checkout drop-off by 18% and simplified KYC flows for merchants.",
+      "url": "https://example.com/case-studies/zen-pay",
+      "creator": { "@id": "https://example.com/#organization" }
+    },
+
+    {
+      "@type": "CreativeWork",
+      "@id": "https://example.com/case-studies/bolt-media#work",
+      "headline": "Bolt Media — Platform rearchitecture",
+      "description": "Migrated monolith to microservices, improved reliability and deploy speed.",
+      "url": "https://example.com/case-studies/bolt-media",
+      "creator": { "@id": "https://example.com/#organization" }
+    },
+
+    {
+      "@type": "ContactPage",
+      "@id": "https://example.com/contact#contactpage",
+      "url": "https://example.com/contact",
+      "name": "Contact",
+      "isPartOf": { "@id": "https://example.com/#website" }
+    }
+
+  ]
+}
+</script>
+
+   
   </head>
+ 
   <body>
     <!-- header section -->
     <header>
