@@ -36,7 +36,40 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <label for="search">Search articles</label> <input type="text" id="search" placeholder="Search articles,topics or ta"> <button type="submit">Search</button>
+      <label for="search">Search articles</label>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search articles,topics or ta"
+      />
+      <button type="submit">Search</button>
     </header>
+    <!-- MAin Content -->
+    <main>
+      <!-- Select Article -->
+      <section>
+        <h2>Selected Articles</h2>
+        <p>
+          A curated index of recent and notable pieces. Click a title to read
+          the full article.
+        </p>
+        <h3>Filter by</h3>
+        <label for="tag">Tag</label>
+        <select id="tag">
+          <option value="All tags">All tags</option>
+          <option value="Technology">Trchnology</option>
+          <option value="Culture">Culture</option>
+          <option value="Travels">Travels</option>
+          <option value="Essays">Essays</option>
+        </select>
+        <label for="Sort">Sort</label>
+        <select id="Sort">
+          <option value="Newest">Newest</option>
+          <option value="Oldest">Oldest</option>
+          <option value="Most read">Most read</option>
+        </select>
+        <button value="Apply">Apply</button>
+      </section>
+    </main>
   </body>
 </html>
